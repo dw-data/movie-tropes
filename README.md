@@ -105,14 +105,15 @@ The script in `cleaning/tvtropes.R` contains the code used to scrape and combine
 2. Filter out wrong links with pattern recognition / manual checks in OpenRefine
 	* for more info on the link matching decisions, see `cleaning/tvtropes.R`, lines 192 to 229
 
-**Result:** 6637 matched eligible movies
+
+**Result:** 7001 matched eligible movies, including all winners and all but 25 (5 %) of the nominees.
 
 ### 3. Get trope lists for matched movies from TVTropes entries
 
 1. Scrape list of all trope links (contain `pmwiki.php/Main/`) from entry, scrape number of contributing users
 2. Filter movies with less than 2 contributing users
 
-**Result:** 21789 unique encountered tropes
+**Result:** 6637 matched eligible movies, 21789 unique encountered tropes
 
 
 ## Data analysis
