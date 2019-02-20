@@ -35,12 +35,17 @@ On [this page](https://dw-data.github.io/movie-tropes/), you'll find an interact
 
 `tvtropes_analysis_stereotypes.R`			Script file for stereotypes analysis
 
-	Core datasets of these analysis scripts:
-
-	`movies`		6637x16 data frame with metadata on each movie in the sample, including title, year, tvtropes link, genre and winner status
-
 `/cleaning`									Script and datasets for gathering and cleaning the data
 	`tvtropes.R`							R script for scraping the data	
+
+
+Core datasets of the `_analysis_` scripts:
+
+* `movies`			6637x16 data frame with metadata on each movie in the sample, including title, year, tvtropes link, genre and winner status
+* `tropelist`		21789x4 data frame with list of unique encountered tropes with ID, title, frequency, frequency since 2000 and short link.
+					The short link can be used to look up tropes by adding `https://tvtropes.org/pmwiki/pmwiki.php/Main/` in front to form the URL.
+* `tropes`			List with 6637 items, names are movie IDs as listed in `movies` and in the same order.
+					List of trope names ocurring in each movie. Names used as in `tropelist`
 
 
 # Methodology
