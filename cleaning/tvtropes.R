@@ -356,8 +356,26 @@ tr = tr %>% mutate(eq = tropelink == gsub("[\\.,\\/#!$%\\^&\\*;:{}=\\—\\+_`~()
       group_by(tropeid, tropename) %>%
       summarize(tropefreq = sum(tropefreq),
                 tropelink = ifelse(any(eq), tropelink[which(eq)], tropelink[which.max(tropefreq)]))
-
-save.image("tvtropes_all.RData")
 tropelist = tr;rm(tr)
+
+#add frequency from year 2000 to tropelist
+tmp = data.frame(year = rep(movies$oscarsYear,lengths(tropes)), tropename = unlist(tropes), stringsAsFactors = F) %>%
+    filter(year >= 2000) %>% 
+    group_by(tropename) %>% summarise(tropefreq2000 = n())
+tropelist = left_join(tropelist[1:4], tmp, by = c("tropename")) %>% mutate(tropefreq2000 = ifelse(is.na(tropefreq2000), 0, tropefreq2000))
+rm(tmp)
+
+#mark 2019 nominees
+n18 = c("Black Panther", "BlacKKKlansman", "Bohemian Rhapsody", "The Favourite", "Green Book", "Roma", "A Star Is Born", "Vice")
+movies$winner[movies$eligibleTitle %in% n18 & movies$oscarsYear == 2018] = 1
+rm(n18)
+
+save.image("cleaning/tvtropes_all.RData")
+
+#save data for analyses
 save(movies, tropelist, tropes,file = "../tvtropes_analysis_oscars.RData")
 save(movies, tropelist, tropes,file = "../tvtropes_analysis_stereotypes.RData")
+
+#write trope and movie list
+write.csv(movies, "../datasets/list_movies.csv", row.names = F, na="")
+write.table(tropelist, "../datasets/list_tropes.csv", row.names = F, na="", sep=";", dec=",")
