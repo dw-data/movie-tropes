@@ -1,0 +1,187 @@
+body {
+     font-family: 'Noto Sans', sans-serif;
+     color: #3c444d;
+     font-size: 16px;
+     line-height: 28px;
+     margin: 0px;
+}
+ section {
+     margin: auto;
+     width: 80%;
+}
+ .p {
+     font-size: 18px;
+}
+ .header {
+     background-image: linear-gradient(102deg, #0064b4, #00a0ff);
+     text-align: justify;
+     height: 90px;
+    /* IE special */
+     width: 100%;
+     -ms-text-justify: distribute-all-lines;
+     text-justify: distribute-all-lines;
+}
+ .header:after{
+     content: '';
+     display: inline-block;
+     width: 100%;
+     height: 0;
+     font-size:0;
+     line-height:0;
+}
+ .nav {
+     display: inline-block;
+     vertical-align: top;
+     margin-top: 32px;
+     margin-right: 30px;
+     width: 78px;
+     height: 27px;
+     font-family: Noto Sans;
+     font-size: 20px;
+     font-weight: bold;
+     font-style: normal;
+     font-stretch: normal;
+     line-height: normal;
+     letter-spacing: normal;
+     text-align: right;
+     color: #ffffff;
+    /* ie 7*/
+     *display: inline;
+     *zoom:1;
+     *text-align: right;
+}
+ #article{
+     font-size: 18px;
+     margin-bottom: 50px;
+}
+ a {
+     color:#00a5ff;
+     text-decoration:none;
+     background-color:#fff;
+     padding:0px;
+     transition: all 0.2s ease-in-out;
+     -webkit-transition: all 0.2s ease-in-out;
+     -moz-transition: all 0.3s ease-in-out;
+}
+ a:hover{
+     background-color:#fff;
+     color:#00a5ff;
+     border-bottom: 2px solid rgba(0, 165, 255, .5);
+}
+ a.navi {
+     display: inline-block;
+     vertical-align: top;
+     margin-top: 32px;
+     margin-right: 30px;
+     width: 78px;
+     height: 27px;
+     font-family: Noto Sans;
+     font-size: 20px;
+     font-weight: bold;
+     font-style: normal;
+     font-stretch: normal;
+     line-height: normal;
+     letter-spacing: normal;
+     text-align: right;
+     color: #ffffff;
+    /* ie 7*/
+     *display: inline;
+     *zoom:1;
+     *text-align: right;
+     background-color: rgba(0, 160, 255, .0);
+    ;
+}
+ a.navi:hover{
+     border-bottom: 2px solid rgba(255, 255, 255, .5);
+}
+ h1 {
+     display: inline-block;
+     margin-top: 0.321em;
+    /* ie 7*/
+     *display: inline;
+     *zoom: 1;
+     *text-align: left;
+}
+ .white {
+     height: 46px;
+     object-fit: contain;
+     margin-left: 30px;
+     margin-top: 22px;
+     margin-bottom: 42px;
+    
+}
+ #headline {
+     font-family: DWTheAntiquaB-W6SemiBold;
+     font-size: 40px;
+     font-style: normal;
+     font-weight: 600px;
+     font-stretch: normal;
+     line-height: 1.25;
+     letter-spacing: normal;
+     text-align: left;
+     color: #002d5a !important;
+     margin-top: 40px;
+     margin-bottom: 20px;
+}
+ #author-line {
+     width: 940px;
+     font-family: Noto Sans;
+     font-size: 14px;
+     font-weight: normal;
+     font-style: normal;
+     font-stretch: normal;
+     line-height: 1.71;
+     letter-spacing: normal;
+     text-align: left;
+     color: #9099a3;
+}
+ label {
+     color: #5c666e;
+     display: block;
+     width: auto;
+     float: left;
+     font-size: 14px;
+}
+ select {
+     -moz-appearance: none;
+     -webkit-appearance: none;
+     appearance: none;
+     border: none;
+}
+ select::-ms-expand {
+     display: none;
+}
+ select {
+    /* ... */
+     width: 106px;
+     height: 36px;
+     margin-left:10px;
+     margin-right:10px;
+     padding-left: 10px;
+     background: url(img/arrow-down.png) no-repeat;
+     color: #00a5ff;
+     font-family: 'Noto Sans', sans-serif;
+     font-size: 18px;
+     border-radius: 21px;
+     background-color: #fff;
+}
+ input {
+     width: 290px;
+     margin-top:10px;
+     margin-right: 10px;
+     border-radius: 21px;
+     padding-left: 10px;
+     color: #00a5ff;
+     font-family: 'Noto Sans', sans-serif;
+     font-size: 18px;
+     border:1px solid #fff;
+     }
+ #form-search input[type="search"]::-webkit-search-decoration{
+    display:none;
+}
+ #donations-table_info {
+     display: none;
+}
+.paginate_button next:hover {
+color: #002d5a !important;
+}
