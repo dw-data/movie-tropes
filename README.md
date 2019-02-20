@@ -26,8 +26,8 @@ Movies reflect stereotypes, but they also shape them. If Asians are portrayed as
 
 # Interactive table of all tropes
 
-On [this page](https://dw-data.github.io/movie-tropes/), you'll find an interactive table of all tropes we analyzed. Filter and search for your own stories!
-
+**On [this page](https://dw-data.github.io/movie-tropes/), you'll find an interactive table of all tropes we analyzed. Filter and search for your own stories!**
+<a href="https://dw-data.github.io/movie-tropes/" target="_blank"><img src="datatable_screenshot.png" width="40%" alt="Scatter plot: frequency of tropes in all movies vs. frequency in just the nominees"></a>
 
 # Data and code files
 
