@@ -3,37 +3,37 @@
 Ahead of the Oscars, DW wanted to look at what film chlichés say about Hollywood. So we analyzed the [TVTropes.org](https://tvtropes.org/) entries for 6637 Oscar-eligible movies from 1929 to 2019. In this repository, you will find the methodology, data and code behind the two stories that came out of this analysis.
 
 ## 1. The Oscar Academy's taste in movies
-*Idea, research, data analysis, visualization:* [Kira Schacht](https://twitter.com/daten_drang)
-
-*Research and writing:* [Laura Döing](https://twitter.com/LauraDoeing)
-
 **Read the full article on DW.com:** [English](https://www.dw.com/xx) | [German](https://www.dw.com/a-47499539)
 
 How does the Academy pick an Oscar nominee? Our data analysis shows which tropes help a movie get nominated as "Best Picture". Hint: Drama helps. So does alcohol.
 
-[Jump to data analysis](#analysis_oscars)
+*Idea, research, data analysis, visualization:* [Kira Schacht](https://twitter.com/daten_drang)
+
+*Research and writing:* [Laura Döing](https://twitter.com/LauraDoeing)
+
+\[[Jump to data analysis](#analysis_oscars)\]
 
 
 ## 2. What Hollywood movies do to perpetuate racial stereotypes
-*Story:* [Kira Schacht](https://twitter.com/daten_drang)
-
 **Read the full article on DW.com:** [English](https://www.dw.com/a-47561660) | [German](https://www.dw.com/a-47561600)
 
 Movies reflect stereotypes, but they also shape them. If Asians are portrayed as nerdy, black men as dangerous and Latinas as fiery, it influences perceptions. So what exactly does Hollywood have to say about various ethnic groups?
 
-[Jump to data analysis](#analysis_stereotypes)
+*Story:* [Kira Schacht](https://twitter.com/daten_drang)
+
+\[[Jump to data analysis](#analysis_stereotypes)\]
 
 
-## Data and code files
+# Interactive table of all tropes
+
+On [this page](https://www.dw.com/a-47561660), you'll find an interactive table of all tropes we analyzed. Filter and search for your own stories!
+
+
+# Data and code files
 
 `tvtropes_analysis_oscars.R`				Script file for Oscars analysis
 
 `tvtropes_analysis_stereotypes.R`			Script file for stereotypes analysis
-
-
-## Interactive table of all tropes
-
-On [this page](https://www.dw.com/a-47561660), you'll find an interactive table of all tropes we analyzed. Filter and search for your own stories!
 
 
 # Methodology
@@ -134,20 +134,17 @@ Script file:  `tvtropes_analysis_oscars.R`
 	* Question: Which tropes have a *statistically significant* impact on a movie’s chances of getting a nomination, be it positive or negative?
 	* Test hypothesis: For each trope: Compare the likelihood of a nomination for movies with the trope to the likelihood of a nomination for movies without the trope
 		* Conduct Fisher’s exact text for each trope with alpha = 0.05 (Bonferroni-adjusted)
-
-	**Result:**
-	
-	- 32 tropes have a statistically significant impact on the nomination chances of a movie
-	- No tropes were found to have an impact on the chances of a nominee becoming a winner
-	- 2 tropes were found to have a significant impact on getting from eligible to winner
-	
-	For the article, we focused on the tropes that increase the chance of a nomination
+	* Result:
+		* 32 tropes have a statistically significant impact on the nomination chances of a movie
+		* No tropes were found to have an impact on the chances of a nominee becoming a winner
+		* 2 tropes were found to have a significant impact on getting from eligible to winner
+		* For the article, we focused on the tropes that increase the chance of a nomination
 
 3. Compare the frequency of tropes in all movies to the frequency in just the nominees
 	* Show the difference in Academy taste vs. popular taste
 	* Highlight the tropes found to have a significant impact
 
-![Scatter plot: frequency of tropes in all movies vs. frequency in just the nominees](101_en_oscars_tropes_impact.png)
+<img src="101_en_oscars_tropes_impact.png" width="40%" alt="Scatter plot: frequency of tropes in all movies vs. frequency in just the nominees">
 
 
 ### <a id="analysis_stereotypes"></a>Analysis: What Hollywood movies do to perpetuate racial stereotypes
