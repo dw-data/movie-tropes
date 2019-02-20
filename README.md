@@ -35,8 +35,13 @@ On [this page](https://dw-data.github.io/movie-tropes/), you'll find an interact
 
 `tvtropes_analysis_stereotypes.R`			Script file for stereotypes analysis
 
-`/cleaning`									Script and datasets for gathering and cleaning the data
-	`tvtropes.R`							R script for scraping the data	
+`/cleaning`									Folder for scripts and datasets for gathering and cleaning the data
+
+`/cleaning/tvtropes.R`						R script for scraping the data	
+
+`/datasets/list_tropes.csv`					Comma-separated table with data for 6637 movies. Content see `movies` data frame below.
+
+`/datasets/list_tropes.csv`					Semicolon-separated table with data for 21789 tropes. Content see `tropelist` data frame below.								
 
 
 Core datasets of the `_analysis_` scripts:
@@ -45,7 +50,7 @@ Core datasets of the `_analysis_` scripts:
 * `tropelist`		21789x4 data frame with list of unique encountered tropes with ID, title, frequency, frequency since 2000 and short link.
 					The short link can be used to look up tropes by adding `https://tvtropes.org/pmwiki/pmwiki.php/Main/` in front to form the URL.
 * `tropes`			List with 6637 items, names are movie IDs as listed in `movies` and in the same order.
-					List of trope names ocurring in each movie. Names used as in `tropelist`
+					List of trope names ocurring in each movie. Names used as in `tropelist`-
 
 
 # Methodology
@@ -79,7 +84,7 @@ It would be next to impossible to identify all the movies that satisfied these c
 
 ### Reminder lists
 
-Link: <https://www.atogt.com/askoscar/display-reminder-list-text.php>
+**Link:** <https://www.atogt.com/askoscar/display-reminder-list-text.php>
 
 Sources for Fact-checking: [official 91st reminder list](https://www.oscars.org/sites/oscars/files/91st_reminder_list.pdf) | [90th](https://www.oscars.org/sites/oscars/files/90th_reminder_list.pdf) | [89th](https://www.oscars.org/sites/oscars/files/89th_reminder_list.pdf) | [88th](https://www.oscars.org/sites/oscars/files/88th_reminder_list.pdf)
 
@@ -87,13 +92,13 @@ A list of all the movies eligible for an Oscar nomination, sent out yearly by th
 
 ### Nominees and Winners
 
-Link: <http://awardsdatabase.oscars.org/>
+**Link:** <http://awardsdatabase.oscars.org/>
 
 The official Academy database provides an overview of all previous Oscar winners and nominees. It was used to check and complement the reminder list data and provide information on the movies' "Best Picture" winner/nominee status.
 
 ### IMDB dataset: Movie Metadata
 
-Link: <https://www.imdb.com/interfaces/>
+**Link:** <https://www.imdb.com/interfaces/>
 
 The IMDB dataset `title.basics.tsv.gz` contains metadata on all movies 
 
