@@ -35,6 +35,13 @@ On [this page](https://dw-data.github.io/movie-tropes/), you'll find an interact
 
 `tvtropes_analysis_stereotypes.R`			Script file for stereotypes analysis
 
+	Core datasets of these analysis scripts:
+
+	`movies`		6637x16 data frame with metadata on each movie in the sample, including title, year, tvtropes link, genre and winner status
+
+`/cleaning`									Script and datasets for gathering and cleaning the data
+	`tvtropes.R`							R script for scraping the data	
+
 
 # Methodology
 

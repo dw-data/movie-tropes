@@ -370,7 +370,7 @@ n18 = c("Black Panther", "BlacKKKlansman", "Bohemian Rhapsody", "The Favourite",
 movies$winner[movies$eligibleTitle %in% n18 & movies$oscarsYear == 2018] = 1
 rm(n18)
 
-save.image("cleaning/tvtropes_all.RData")
+save.image("tvtropes_all.RData")
 
 #save data for analyses
 save(movies, tropelist, tropes,file = "../tvtropes_analysis_oscars.RData")
