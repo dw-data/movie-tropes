@@ -3,7 +3,7 @@
 Ahead of the Oscars, DW wanted to look at what film chlichés say about Hollywood. So we analyzed the [TVTropes.org](https://tvtropes.org/) entries for 6637 Oscar-eligible movies from 1929 to 2019. In this repository, you will find the methodology, data and code behind the two stories that came out of this analysis.
 
 ## 1. The Oscar Academy's taste in movies
-**Read the full article on DW.com:** [English](https://www.dw.com/xx) | [German](https://www.dw.com/a-47499539)
+**Read the full article on DW.com:** [English](https://www.dw.com/a-47613165) | [German](https://www.dw.com/a-47499539)
 
 How does the Academy pick an Oscar nominee? Our data analysis shows which tropes help a movie get nominated as "Best Picture". Hint: Drama helps. So does alcohol.
 
